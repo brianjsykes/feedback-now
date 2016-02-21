@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- Firebase -->
+    <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/1.1.3/angularfire.min.js"></script>
+    <script src="//cdn.jsdelivr.net/rsvp/3.0.6/rsvp.js"></script>
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/controllers/appctrl.js"></script>
+    <script src="js/controllers/event.js"></script>
+    <script src="js/controllers/home.js"></script>
+    <script src="js/controllers/login.js"></script>
+    <script src="js/controllers/myevent.js"></script>
+    <script src="js/directives.js"></script>
+    <script src="js/services.js"></script>
+    <script src="lib/elapseMe/elapseMe.js"></script>
+  </head>
+
+  <body ng-app="fbn">
+    <ion-nav-view></ion-nav-view>
+  </body>
+</html>

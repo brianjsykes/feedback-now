@@ -1,0 +1,16 @@
+<ion-view view-title="Feedback Now!">
+  <ion-content>
+    <h1>Event</h1>
+    <h2>Event Code: {{eventId}}</h2>
+    <p>Host: {{ownerName}}</p>
+    <p>Start Time: {{startTime}}</p>
+    <p>Elapsed time: <span id="elapsedTime"></span></p>
+    <p>End Time: {{endTime === null || endTime === "Invalid Date" ? "----" : endTime}}</p>
+    <div>
+      <button class="button button-block button-balanced"><i class="icon ion-thumbsup"></i></button>
+      <button class="button button-block button-positive"><i class="icon ion-chatbox"></i></button>
+      <button class="button button-block button-energized"><i class="icon ion-help"></i></button>
+      <button class="button button-block button-assertive"><i class="icon ion-thumbsdown"></i></button>
+    </div>
+  </ion-content>
+</ion-view>

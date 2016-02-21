@@ -1,0 +1,13 @@
+<ion-view view-title="Hi {{user.displayName.split(' ')[0]}}">
+  <ion-content>
+    <div class="list list-inset">
+	  <label class="item item-input">
+	    <i class="icon ion-search placeholder-icon"></i>
+	    <input type="text" placeholder="Event Code" capitalize ng-model="data.eventCode">
+	  </label>
+	  <div class="button button-block button-outline button-positive" ng-disabled="data.eventCode.length < 1" ng-click="goToEvent()">Go to existing Event</div>
+	</div>
+	<div class="button button-block button-outline button-balanced button-large" ng-click="startNew()" >Start a new event</div>
+	<div class="button button-block button-outline button-calm button-large" ng-click="browseEvents()" >Browse public events</div>
+  </ion-content>
+</ion-view>

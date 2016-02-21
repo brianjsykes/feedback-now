@@ -1,0 +1,17 @@
+<ion-view>
+  <ion-content>
+    <form class="list" ng-if="eventCreated !== true">
+        <label class="item item-input">
+            <input type="text" placeholder="Event Title" ng-model="formData.eventTitle">
+        </label>
+    </form>
+    <div id="event-info" ng-if="eventCreated === true">
+      <h1>Title: {{eventData.eventTitle}}</h1>
+      <p>Event Code: {{eventId}}</p>
+      <p ng-if="startTime !== null">Start time: {{startTime}}</p>
+      <p>Elapsed time: <span id="elapsedTime"></span> </p>
+    </div>
+  </ion-content>
+  <div ng-if="eventCreated !== true" class="button button-positive button-block button-large" style="position:absolute;bottom:0px;width: 100%;margin-bottom: -2px;" ng-click="createEvent()" ng-disabled="formData.eventTitle.length < 1">Create New Event</div>
+  <div ng-if="eventCreated === true && startTime === null" class="button button-balanced button-block button-large animate-if" style="position:absolute;bottom:0px;width: 100%;margin-bottom: -2px;" ng-click="startEvent()">Start</div>
+</ion-view>
